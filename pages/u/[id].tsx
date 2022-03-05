@@ -110,9 +110,9 @@ const TutorPage = ({ tutor }) => {
                     {(tutor && tutor.tel) ? <a href={`tel:${tutor.tel}`} className=''>
                         <button className='px-2 py-1 bg-white hover:bg-gray-200 rounded text-md flex items-center justify-center gap-2'> <Image src="/phoneIcon.svg" alt="Phone Logo" height={32} width={32} /> {tutor.tel}</button> </a> : <></>}
                     {(tutor && tutor.ig) ? <a href={`https://instagram.com/${tutor.ig}`} className=''>
-                        <button className='px-2 py-1 bg-white hover:bg-gray-200 rounded text-md flex items-center justify-center gap-2 '> <Image src="/igIcon.svg" alt="Instagram Logo" height={32} width={32} /> Instagram </button></a> : <></>}
+                        <button className='px-2 py-1 bg-white hover:bg-gray-200 rounded text-md flex items-center justify-center gap-2 '> <Image src="/igIcon.svg" alt="Instagram Logo" height={32} width={32} /> {tutor.ig} </button></a> : <></>}
                     {(tutor && tutor.fb) ? <a href={`${tutor.fb}`} className=''>
-                        <button className='px-2 py-1 bg-white hover:bg-gray-200 rounded text-md flex items-center justify-center gap-2'><Image src="/fbIcon.svg" alt="Facebook Logo" height={32} width={32} />Facebook</button> </a> : <></>}
+                        <button className='px-2 py-1 bg-white hover:bg-gray-200 rounded text-md flex items-center justify-center gap-2'><Image src="/fbIcon.svg" alt="Facebook Logo" height={32} width={32} /> {tutor.fb} </button> </a> : <></>}
                     {(tutor && tutor.line) ? <a className=''>
                         <button className='px-2 py-1 bg-white hover:bg-gray-200 rounded text-md flex items-center justify-center gap-2'> <Image src="/lineIcon.svg" alt="Line Logo" height={32} width={32} /> {tutor.line} </button></a> : <></>}
                 </div>
